@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			#magic8-ball {
+			    color: rgba(157,189,255,.8);
+			    background-image: url('img/8ball.png');
+			    background-repeat: no-repeat;
+				height: 500px;
+				width: 500px;
+				margin: auto;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+			}
+			@media only screen and (max-width: 500px) {
+				#magic8-ball {
+					background-size: 100vw;
+					height: 100vw;
+				}
+			}
+
+			#message-text {
+				max-width: 150px;
+				text-align: center;
+			}
+		</style>
+		<link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+		<script src="jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+		<script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	</head>
+	<body>
+		<div id="magic8-ball">
+			<div id="message-text"></div>
+		</div>
+		<script src="magic8.js"></script>
+	</body>	
+</html>
